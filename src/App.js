@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <NavBar />
+          <NavBar/>
           <Switch>
             <Container className="route_container" fluid>
               <Route exact path="/about" component={About} />

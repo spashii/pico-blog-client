@@ -15,15 +15,19 @@ const NavBar = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-            <Nav.Link as={Link} to='/'>home</Nav.Link>
-            <Nav.Link as={Link} to='/about'>about</Nav.Link>
         </Nav>
         <Nav>
-            <Nav.Link as={Link} to='/' disabled>login</Nav.Link>
-            <Nav.Link as={Link} to='/' disabled>register</Nav.Link>
+    {
+      // <Nav.Link as={Link} to='/' disabled>login</Nav.Link>
+      // <Nav.Link as={Link} to='/' disabled>register</Nav.Link>
+    }
+            <Nav.Link as={Link} to='/'>home</Nav.Link>
+            <Nav.Link as={Link} to='/about'>about</Nav.Link>
             <Nav.Link as={Link} to='/post/new' >new post</Nav.Link>
-            <Nav.Link as={Link} to='/' disabled>profile</Nav.Link>
-            <Nav.Link as={Link} to='/' disabled>logout</Nav.Link>
+    {
+      // <Nav.Link as={Link} to='/' disabled>profile</Nav.Link>
+      // <Nav.Link as={Link} to='/' disabled>logout</Nav.Link>
+    }
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -14,9 +14,8 @@ const PostInput = () => {
     event.preventDefault();
     event.target.reset();
     const data = { author, body };
-    setAuthor('');
-    setBody('');
-    const url = 'http://localhost:3000/api/posts';
+    // const url = 'http://localhost:3000/api/posts';
+    const url = 'https://pico-flask.herokuapp.com/api/posts';
     await fetch(url, {
       method: 'POST',
       mode: 'cors',
@@ -45,13 +44,13 @@ const PostInput = () => {
                     onChange={(e) => setAuthor(e.target.value)}
                     className="w-100 mb-2"
                     type="text"
-                    placeholder="what's your name?"
+                    placeholder="your name"
                   />
                   <Form.Control
                     onChange={(e) => setBody(e.target.value)}
                     className="mb-2"
                     type="text"
-                    placeholder="say something. . ."
+                    placeholder="say something"
                   />
                   <Button size="sm" variant="secondary" type="submit">
                     submit

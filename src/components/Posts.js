@@ -13,7 +13,8 @@ const Posts = () => {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    const url = "http://localhost:3000/api/posts"
+    // const url = "http://localhost:3000/api/posts"
+    const url = 'https://pico-flask.herokuapp.com/api/posts';
     fetch(url)
       .then(res => res.json())
       .then(

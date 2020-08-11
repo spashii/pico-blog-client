@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Router>
+        <Router basename="/pico-blog-client">
           <NavBar/>
           <Switch>
             <Container className="route_container" fluid>
